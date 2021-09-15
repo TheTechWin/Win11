@@ -18,7 +18,7 @@ img {
 }
 
 body {
-    background-image: url('/img/dark.jpeg');
+    background-image: url('img/dark.jpeg');
     background-size: cover;
     min-height: 97vh;
 }
