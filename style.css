@@ -1,0 +1,277 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: url('win11.cur'), default;
+}
+
+i {
+    cursor: url('win11.cur'), default;
+}
+
+p {
+    cursor: url('win11.cur'), default;
+}
+
+img {
+    cursor: url('win11.cur'), default;
+}
+
+body {
+    background-image: url('/img/dark.jpeg');
+    background-size: cover;
+    min-height: 97vh;
+}
+
+.desktop-icon {
+    width: 70px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 13px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.desktop-icon {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.desktop-icon:hover {
+    background-color: rgba(0, 0, 0, 0.589);
+}
+
+.desk-ico {
+    top: 10px;
+    left: 20px;
+    position: relative;
+    width: 30px;
+}
+
+.desk-ico-txt {
+    top: 10px;
+    text-align: center;
+    position: relative;
+    color: white;
+    font-family: arial;
+}
+
+.ico-bin {
+    height: 90px;
+}
+
+.ico-explorer {
+    height: 90px;
+}
+
+.ico-edge {
+    height: 90px;
+}
+
+.taskbar {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.822);
+    top: 94.5%;
+    text-align: center;
+}
+
+.tb {
+    top: 95%;
+    position: fixed;
+    width: 18px;
+}
+
+.start-butt {
+    left: 45%;
+}
+
+.widget {
+    left: 48%
+}
+
+.settings {
+    left: 51%;
+}
+
+.edge {
+    left: 54%;
+}
+
+.buttonoftb {
+    margin: 7px;
+}
+
+.start-menu {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    z-index: 15;
+    width: 500px;
+    height: 77%;
+    margin: -100px 0 0 -150px;
+    background: rgba(29, 29, 29, 0.911);
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 300ms;
+}
+
+.start-menu.active {
+    opacity: 100;
+}
+
+.tb-button:hover {
+    opacity: 0.5;
+    transition-duration: 500ms;
+}
+
+.tb-button {
+    opacity: 100;
+    transition-duration: 300ms;
+}
+
+.start-ico-img {
+    position: relative;
+    width: 30px;
+}
+
+.start-ico-txt {
+    font-family: arial;
+    color: rgb(255, 255, 255);
+    font-weight: 750;
+}
+
+.start-ico {
+    position: relative;
+    background-color: rgb(19, 19, 19);
+    border: none;
+    margin: 15px;
+    height: 70px;
+    width: 70px;
+}
+
+.start-ico:hover {
+    background-color: rgb(14, 14, 14);
+}
+
+.window {
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    z-index: 15;
+    width: 800px;
+    height: 500px;
+    margin: -100px 0 0 -150px;
+    background: rgb(29, 29, 29);
+    border-radius: 10px;
+    transition: opacity 150ms;
+}
+
+.window-toolbar {
+    color: white;
+    font-family: arial;
+    background-color: black;
+    height: 35px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.window-toolbar-img {
+    width: 18px;
+    margin: 8px;
+}
+
+.window-toolbar-txt {
+    position: absolute;
+    margin: 8px;
+    top: 0%;
+    left: 3%;
+}
+
+.window-toolbar-close {
+    position: absolute;
+    left: 94.5%;
+    width: 45px;
+    height: 35px;
+    background-color: rgba(255, 0, 0, 0);
+    color: white;
+    border-top-right-radius: 10px;
+    border: none;
+}
+
+
+
+.window-toolbar-close:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+.window-toolbar-max {
+    position: absolute;
+    left: 88.5%;
+    width: 45px;
+    height: 35px;
+    background-color: rgba(255, 0, 0, 0);
+    color: white;
+    border: none;
+}
+
+.window-toolbar-max:hover {
+    background-color: rgb(41, 41, 41);
+}
+
+.settings-app {
+    display: none;
+}
+
+.settings-app.active {
+    display: block;
+}
+
+.settings-start {
+    position: absolute;
+    top: 13%;
+    margin: 10px;
+}
+
+.allapps-butt {
+    position: absolute;
+    top: 5%;
+    left: 85%;
+}
+
+.edge-start {
+    position: relative;
+    top: 12.1%;
+    left: 15%;
+    margin-left: 20px;
+}
+
+.edge-app {
+    display: none;
+}
+
+.edge-app.active {
+    display: block;
+}
+
+.edge-toolbar {
+    margin: 0px;
+    height: 30px;
+    width: 100%;
+    background-color: black;
+}
+
+.edge-tool {
+    color: white;
+    margin: 6px;
+    opacity: 100;
+}
+
+.edge-tool:hover {
+    opacity: 0.5;
+}
+
+.edge-url-txtin {
+    width: 660px;
+    font-weight: bold;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/jquery/jquery-ui.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="/jquery/jquery-ui.min.js"></script>
+        <script src="https://use.fontawesome.com/c1fc52643a.js"></script>
+        <script>
+
+            /* $(function() {
+                $('.desktop-icon').draggable()
+            }) */
+
+            $(function() {
+                $('.window').draggable();
+            });
+            
+
+        </script>
+
+        <script type="text/javascript">
+        
+            function toggleStart() {
+                document.getElementById("start-menu").classList.toggle("active");
+            }
+
+            function intro() {
+                alert("Hello and welcome to Tech11! The windows 11 emulation in browser. Alot of things are still in development. But all the functions will be developed soon!")
+            }
+
+            function toggleSettingsTaskbr() {
+                document.getElementById("settings-app").classList.toggle("active");
+            }
+
+            function toggleSettings() {
+                document.getElementById("settings-app").classList.toggle("active");
+                toggleStart();
+            }
+
+            function toggleEdge() {
+                document.getElementById("edge-app").classList.toggle("active");
+                toggleStart()
+            }
+
+            function toggleEdgeTaskbr() {
+                document.getElementById("edge-app").classList.toggle("active");
+            }
+        
+        </script>
+
+        <body onload="intro()">
+
+            <div class="ico-computer desktop-icon">
+                <img draggable="false" src="/ico/computer.png" class="desk-ico">
+                <p draggable="false" class="desk-ico-txt">This PC</p>
+            </div>
+            <div class="ico-bin desktop-icon">
+                <img draggable="false" src="ico/trash-empty.png" class="desk-ico">
+                <p draggable="false" class="desk-ico-txt">Recycle Bin</p>
+            </div>
+            <div class="ico-explorer desktop-icon">
+                <img draggable="false" src="/ico/explorer.png" class="desk-ico">
+                <p draggable="false" class="desk-ico-txt">File Explorer</p>
+            </div>
+            <div class="ico-store desktop-icon">
+                <img draggable="false" src="/ico/store-light.png" class="desk-ico">
+                <p draggable="false" class="desk-ico-txt">Store</p>
+            </div>
+            <div class="ico-edge desktop-icon" onclick="toggleEdgeTaskbr()">
+                <img draggable="false" src="/ico/edge.png" class="desk-ico">
+                <p draggable="false" class="desk-ico-txt">Microsoft Edge</p>
+            </div>
+
+            <div class="ico-settings desktop-icon" onclick="toggleSettingsTaskbr()">
+                <img draggable="false" src="/ico/settings.png" class="desk-ico">
+                <p draggable="false" class="desk-ico-txt">Settings</p>
+            </div>
+
+            <div class="taskbar">
+                <div class="tb-button" onclick="toggleStart()"><img draggable="false" src="/ico/start.png" class="tb start-butt buttonoftb"></div>
+                <div class="tb-button"><img draggable="false" src="/ico/widget.png" class="tb widget buttonoftb"></div>
+                <div class="tb-button" onclick="toggleSettingsTaskbr()"><img draggable="false" src="/ico/settings.png" class="tb settings buttonoftb"></div>
+                <div class="tb-button" onclick="toggleEdgeTaskbr()"><img draggable="false" src="/ico/edge.png" class="tb edge buttonoftb"></div>
+            </div>
+
+            <div class="start-menu" id="start-menu">
+                <button class="allapps-butt">All apps</button>
+                <button class="start-ico settings-start" onclick="toggleSettings()" id="settings-launch-start"><img class="start-ico-img" src="/ico/settings.png"><p class="start-ico-txt">Settings</p></button>
+                <button class="start-ico edge-start" onclick="toggleEdge()" id="edge-launch-start"><img class="start-ico-img" src="/ico/edge.png"><p class="start-ico-txt">Microsoft Edge</p></button>
+            </div>
+
+            <div class="settings-app window" id="settings-app">
+
+                <div class="window-toolbar">
+
+                    <img class="window-toolbar-img" src="/ico/settings.png"><p class="window-toolbar-txt">Settings</p>
+
+                    <button class="window-toolbar-max" onclick="toggleSettingsMax()"><img class="window-toolbar-max-img" width="15px" src="/ico/ui/maximize.png"></button>
+                    <button class="window-toolbar-close" onclick="toggleSettingsTaskbr()">X</button>
+
+                </div>
+
+                <div class="settings-body" id="settings-body">
+
+
+
+                </div>
+
+            </div>
+
+            <div class="edge-app window" id="edge-app">
+
+                <div class="window-toolbar">
+
+                    <img class="window-toolbar-img" src="/ico/edge.png"><p class="window-toolbar-txt">Microsoft Edge</p>
+
+                    <button class="window-toolbar-max" onclick="toggleEdgeMax()"><img class="window-toolbar-max-img" width="15px" src="/ico/ui/maximize.png"></button>
+                    <button class="window-toolbar-close" onclick="toggleEdgeTaskbr()">X</button>
+
+                </div>
+
+                <div class="edge-body" id="edge-body">
+
+                    <div class="edge-toolbar">
+                        <i class="fa fa-home edge-tool"></i>
+                        <i class="edge-left edge-tool">←</i>
+                        <i class="edge-right edge-tool">→</i>
+                        <i class="fa fa-refresh edge-tool"></i>
+                        <input type="text" placeholder="Type in your URL." class="edge-url-txtin" id="edge-url-txtin">
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+            
+        </body>
+    </head>
+</html>
+
